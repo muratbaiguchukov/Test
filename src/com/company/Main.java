@@ -8,7 +8,7 @@ public class Main {
         //MyClass cl = new MyClass();
 
         MyClass.firstMethod();
-        MyClass.cecondMethod();
+        //MyClass.cecondMethod();
         System.out.println(Car.myStatic);
 
 

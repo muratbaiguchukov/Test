@@ -7,7 +7,7 @@ public class Javarush {
     инициализации meters используй одну команду.
      */
     int centimeters = 500;
-    meters = centimeters/100;
-    System.out.print(meters);
+    //meters = centimeters/100;
+    //System.out.print(meters);
 
 }
