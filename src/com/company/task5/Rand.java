@@ -32,10 +32,14 @@ public class Rand {
             //}
             value = value + 1;                        // при выпадении очередном выпадении число value будет увеличиваться на единицу
             map.putIfAbsent(randomInt, value);                // метод map.put(), т.е. смотрит в HashMap есть ли такое число -- если есть,
-                                                      // то стирает его и по новой записывает, но уже с новым значением.
+                                                    // то стирает его и по новой записывает, но уже с новым значением.
         }
-
-        System.out.println(map);                      // вывести ключи со значениями в консоль
+            for (Integer key : map.keySet()) {
+                int value = map.get(key);
+                System.out.println(key * value);
+            }
+            map.putIfAbsent(50, 1);
+                System.out.println(map.size());
         }
 
         }
