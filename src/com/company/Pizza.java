@@ -1,19 +1,30 @@
 package com.company;
 
-public class Pizza {
+abstract class Pizza {
 
-    public String grade;
-    public double prise;
-    public double weight;
-    public int ID;
-    public String recipe;
-
-    public void cookPizza(String grade, int ID) { //метод "готовить"
-
-        System.out.println("Готовится пицца № " +  ID);
+    static int orderNumber = 0;
+    public int prise;
+    public int weight;
+    {
+        orderNumber+=1;
     }
 
-    public void deliverPizza(String grade, double weight, double prise, String recipe) { //метод "доставлять"
-        System.out.println("String grade " + " " + "double weight" + " " + "double prise" + " " + "String recipe");
+    public Pizza(int prise, int weight) {
+        this.prise = prise;
+        this.weight = weight;
     }
+
+    public void make() {
+        System.out.println("Готовится пицца №" + orderNumber);
+    }
+
+    public void deliver() {
+        System.out.println(this);
+    }
+
+
 }
+
+
+
+

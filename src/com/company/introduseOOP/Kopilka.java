@@ -12,6 +12,7 @@ package com.company.introduseOOP;
         public int countMoney; //Свойство или поле
 
     public void insertMoney(int money) { //Начало метода1
+
         countMoney = countMoney + money;
     } // Конец метода1
 

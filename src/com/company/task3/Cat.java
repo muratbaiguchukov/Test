@@ -1,2 +1,5 @@
-package com.company.task3;public class Cat {
+package com.company.task3;
+
+public class Cat extends Animal {
+    
 }
